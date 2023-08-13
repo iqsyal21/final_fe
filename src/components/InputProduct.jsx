@@ -31,7 +31,7 @@ function InputProduct({ token, categories }) {
       return alert("harga tidak sesuai");
     } else {
       try {
-        const response = await fetch("http://localhost:8000/product", {
+        const response = await fetch("https://be-peach.vercel.app/product", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

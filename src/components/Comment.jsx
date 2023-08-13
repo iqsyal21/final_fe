@@ -62,7 +62,7 @@ function Comment({ item, token }) {
     if (confirmDelete == true) {
       try {
         const response = await fetch(
-          `http://localhost:8000/comment/${item._id}`,
+          `https://be-peach.vercel.app/comment/${item._id}`,
           {
             method: "DELETE",
             headers: {

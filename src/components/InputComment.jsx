@@ -18,7 +18,7 @@ function InputComment({ id, token }) {
       return alert("komentar tidak sesuai");
     } else {
       try {
-        const response = await fetch(`http://localhost:8000/comment/${id}`, {
+        const response = await fetch(`https://be-peach.vercel.app/comment/${id}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

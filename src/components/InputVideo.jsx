@@ -25,7 +25,7 @@ function InputVideo({ token, categories }) {
       return alert("link gambar harus diisi");
     } else {
       try {
-        const response = await fetch("http://localhost:8000/video", {
+        const response = await fetch("https://be-peach.vercel.app/video", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
